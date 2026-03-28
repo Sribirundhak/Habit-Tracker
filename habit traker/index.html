@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>🎯 HABIT TRACKER 🎯</h1>
+  <p> Track your habits daily ✨</p>
+
+
+  <div class="controls">
+    <div id="streakBox"><i class="fa-solid fa-fire"></i> 0</div>  
+    <input type="text" id="habitInput" placeholder="Enter habit...">
+    <button id="addBtn">Add Habit</button>
+    
+
+    <select id="monthSelect">
+      <option>January</option>
+      <option>February</option>
+      <option>March</option>
+      <option>April</option>
+      <option>May</option>
+      <option>June</option>
+      <option>July</option>
+      <option>August</option>
+      <option>September</option>
+      <option>October</option>
+      <option>November</option>
+      <option>December</option>
+    </select>
+
+    <select id="yearSelect">
+      <option>2026</option>
+      <option>2027</option>
+      <option>2028</option>
+      <option>2029</option>
+      <option>2030</option>
+      <option>2031</option>
+      <option>2032</option>
+      <option>2033</option>
+      <option>2034</option>
+      <option>2035</option>
+      <option>2036</option>
+      <option>2037</option>
+    
+    </select>
+
+    <button id="darkToggle" class="toggle">
+      <div class="toggle-circle">Theme :
+        <i id="themeIcon"></i>
+      </div>
+    </button>
+
+    
+  </div>
+  
+  <div class="progress-bar">
+    <div id="progressFill"></div>
+    <span id="progressText">0%</span>
+  </div>
+  
+  <div class="table-container">
+    <table id="tracker">
+      <thead>
+        <tr id="daysRow">
+          <th>Habit</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+  <div class="reset-btn">
+    <button id="clearMonth">Reset Month</button>
+  </div>
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
