@@ -8,19 +8,13 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
   <h1>🎯 HABIT TRACKER 🎯</h1>
-  <p> Track your habits daily ✨</p>
-
-
+  <p>Track your habits daily ✨</p>
   <div class="controls">
-    <div id="streakBox"><i class="fa-solid fa-fire"></i> 0</div>  
+    <div id="streakBox"><i class="fa-solid fa-fire"></i> 0</div>
     <input type="text" id="habitInput" placeholder="Enter habit...">
     <button id="addBtn">Add Habit</button>
-    
-
     <select id="monthSelect">
       <option>January</option>
       <option>February</option>
@@ -35,7 +29,6 @@
       <option>November</option>
       <option>December</option>
     </select>
-
     <select id="yearSelect">
       <option>2026</option>
       <option>2027</option>
@@ -49,39 +42,34 @@
       <option>2035</option>
       <option>2036</option>
       <option>2037</option>
-    
     </select>
-
     <button id="darkToggle" class="toggle">
-      <div class="toggle-circle">Theme :
-        <i id="themeIcon"></i>
+      <div class="toggle-circle">
+        Theme : <i id="themeIcon"></i>
       </div>
     </button>
-
-    
   </div>
-  
   <div class="progress-bar">
     <div id="progressFill"></div>
     <span id="progressText">0%</span>
   </div>
-  
-  <div class="table-container">
-    <table id="tracker">
-      <thead>
-        <tr id="daysRow">
-          <th>Habit</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
-    </table>
+  <div class="table-wrapper">
+    <div class="table-container">
+      <table id="tracker">
+        <thead>
+          <tr id="daysRow">
+            <th>Habit</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div class="scroll-indicator"></div>
+    <div class="scroll-hint"><i class="fa-solid fa-chevron-left"></i></div>
   </div>
   <div class="reset-btn">
     <button id="clearMonth">Reset Month</button>
   </div>
-  
-
   <script src="script.js"></script>
-
 </body>
 </html>
